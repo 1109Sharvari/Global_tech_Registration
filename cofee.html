@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="https://th.bing.com/th/id/OIP.adtzn7ndHKhMI1LWWta59QHaHf?w=178&h=181&c=7&r=0&o=5&pid=1.7" alt="coffee"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text-box">
+                <h2>It's Just not coffee<br>It's <span>Starbucks</span></h2>
+                <p>Starbucks Corporation is an American multinational chain of coffeehouses
+                     and roastery reserves headquartered in Seattle, Washington. As the world's largest coffeehouse chain,
+                     Starbucks is seen to be the main representation of the United States' 
+                     second wave of coffee culture.As of November 2021, the company had 33,833 stores in 80 countries,
+                       15,444 of which were located in the United States. Out of Starbucks' U.S.-based stores, 
+                     over 8,900 are company-operated, while the remainder are licensed.</p>
+                     <a class="small-box" href="#">Learn More</a>
+                    </div>
+                     <div class="imgbox">
+                        <img src="https://th.bing.com/th/id/OIP.rtBk1vTi0tb8LeDN-jEvaQHaMM?pid=ImgDet&w=178&h=293&c=7" class="starbucks" alt="">
+                     </div>
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="https://th.bing.com/th/id/OIP.rtBk1vTi0tb8LeDN-jEvaQHaMM?pid=ImgDet&w=178&h=293&c=7 " onclick ="imgSlider('https://th.bing.com/th/id/OIP.rtBk1vTi0tb8LeDN-jEvaQHaMM?pid=ImgDet&w=178&h=293&c=7');changeCirclecolor('#017143')"></li>
+            <li><img src=" https://th.bing.com/th/id/OIP.qDJYOYGb9saJ-2MSnYitBgHaO0?pid=ImgDet&w=175&h=350&c=7" onclick="imgSlider('https://th.bing.com/th/id/OIP.qDJYOYGb9saJ-2MSnYitBgHaO0?pid=ImgDet&w=175&h=350&c=7');changeCirclecolor('#eb7495')"></li>
+            <li><img src=" https://th.bing.com/th/id/OIP.C_n_4UBs9gIOSPzyYmcvywAAAA?pid=ImgDet&w=175&h=350&c=7" onclick="imgSlider( 'https://th.bing.com/th/id/OIP.C_n_4UBs9gIOSPzyYmcvywAAAA?pid=ImgDet&w=175&h=350&c=7');changeCirclecolor('#d752b1')"></li>
+        </ul>
+        <ul class="sci"> 
+            <li><a href="#"><img src="https://cdn.techgyd.com/50-Best-Facebook-Logo-Icons-GIF-Transparent-PNG-Images-33.png" class="long" alt=""></a></li>
+            <li><a href="#"><img src="https://th.bing.com/th?q=Black+Twitter+Logo+Transparent&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" class="long" alt=""></a></li>
+            <li><a href="#"><img src="https://th.bing.com/th/id/OIP.qTFTvxkcrV2K1R8P4QZw-AHaHa?w=219&h=219&c=7&r=0&o=5&pid=1.7" class="long" alt=""></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCirclecolor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
